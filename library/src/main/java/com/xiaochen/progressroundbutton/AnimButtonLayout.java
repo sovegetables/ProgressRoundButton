@@ -44,7 +44,7 @@ public class AnimButtonLayout extends LinearLayout {
     public AnimButtonLayout(Context context) {
         super(context);
         mDownloadProgressButton = new AnimDownloadProgressButton(context);
-        LinearLayout.LayoutParams lp = new LinearLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.MATCH_PARENT);
+        LayoutParams lp = new LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.MATCH_PARENT);
         mDownloadProgressButton.setLayoutParams(lp);
         this.addView(mDownloadProgressButton);
         init(context, null);
@@ -54,7 +54,7 @@ public class AnimButtonLayout extends LinearLayout {
         super(context, attrs);
         init(context, attrs);
         mDownloadProgressButton = new AnimDownloadProgressButton(context, attrs);
-        LinearLayout.LayoutParams lp = new LinearLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.MATCH_PARENT);
+        LayoutParams lp = new LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.MATCH_PARENT);
         mDownloadProgressButton.setLayoutParams(lp);
         this.addView(mDownloadProgressButton);
     }

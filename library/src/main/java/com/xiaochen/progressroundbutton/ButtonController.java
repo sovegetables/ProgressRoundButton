@@ -14,7 +14,5 @@ public interface ButtonController {
     boolean enablePress();
 
     boolean enableGradient();
-
-
 }
 
